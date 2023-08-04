@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="drag.js" defer></script>
+    <script src="todo.js" defer></script>
+</head>
+<body>
+    <div class="board">
+        <form id="todo-form">
+            <input type="text" placeholder="New text..." id="input-text">
+            <button type="submit">Add New</button>
+        </form>
+
+        <div class="lanes">
+
+            <div class="swim-lane" id="todo-lane">
+                <h3 class="heading">Todo List</h3>
+
+                <p class="task" draggable="true">Shopping list</p>
+                <p class="task" draggable="true">Brought some cookies</p>
+                <p class="task" draggable="true">Clean the kitchen</p>
+            </div>
+
+            <div class="swim-lane">
+                <h3 class="heading">In Progress</h3>
+
+                <p class="task" draggable="true">Binge 80 hours of Game of thrones</p>
+            </div>
+
+            <div class="swim-lane">
+                <h3 class="heading">Completed</h3>
+
+                <p class="task" draggable="true">Resume your journey</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
